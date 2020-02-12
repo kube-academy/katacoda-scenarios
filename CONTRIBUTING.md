@@ -7,9 +7,8 @@ how to effectively get it merged upstream.
 
 Before getting started, go through the following:
 1. Read and observe the [code of conduct](CODE_OF_CONDUCT.md).
-2. Sign the [CLA](#cla).
-3. Set up necessary [accounts](#accounts-setup).
-4. Review [Katacoda documentation](https://katacoda.com/docs).
+2. Set up necessary [accounts](#accounts-setup).
+3. Review [Katacoda documentation](https://katacoda.com/docs).
 
 ## Accounts setup
 
@@ -23,13 +22,6 @@ There are multiple ways in which you can contribute, either by contributing
 code in the form of new scenarios or bug-fixes or even non-code contributions
 like helping with reviews, testing, documentation updates, filing
 new issues, etc.
-
-## CLA
-
-We welcome contributions from everyone but we can only accept them if you sign
-our Contributor License Agreement (CLA). For questions about the CLA process,
-see the [FAQ](https://cla.vmware.com/faq) or submit a question through the
-GitHub issue tracker.
 
 ## Developer workflow
 
@@ -45,6 +37,9 @@ Please ensure that the issue is self explanatory and has enough information for
 an assignee to get started.
 
 ### GitHub workflow
+
+Each scenario should be self-contained in its own directory at the top level of
+this repository.
 
 1. Fork your own copy of the repository to your GitHub account by clicking on
    `Fork` button on the [GitHub repository](https://github.com/kube-academy/katacoda-scenarios).
