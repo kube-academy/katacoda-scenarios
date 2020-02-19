@@ -1,4 +1,4 @@
-If you want to get a more verbose output about the deployment. Run this command:
+If you want to get a more verbose output about the deployment, run this command:
 
 `kubectl describe deployment`{{execute}}
 

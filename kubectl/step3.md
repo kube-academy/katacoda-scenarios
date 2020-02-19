@@ -1,5 +1,8 @@
-Let’s check the status of the Nodes. Wait for the Nodes to be in the Ready condition.
+Let’s check the status of the Nodes:
 
 `kubectl get nodes`{{execute}}
 
-**Pro Tip**: `kubectl get no` is a shorten version of the command above.
+Make sure the Nodes are in the `Ready` condition by checking the `STATUS` 
+column of the output.
+
+**Pro Tip**: `kubectl get no` is a shorthand version of the command above.

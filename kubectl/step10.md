@@ -1,5 +1,11 @@
-Remember we wanted to list the pods in the previous steps but there were not any in the default Namespace. Now, we have pods in the default Namespace from when we created that deployment resource.
+Remember we wanted to list the Pods in the `default` namespace previously, but there were no Pods in the Namespace. Now, we have Pods in the `default` Namespace from when we created the Deployment resource.
 
-`kubectl get pods`{{execute}}
+View the Pods in the `default` namespace:
 
-Run the command until the pods are *Running* condition
+`watch kubectl get pods`{{execute}}
+
+Keep the watch on the command until the pods are the `RUNNING` condition, which will appear under the `STATUS` section of the output.
+
+Once the Pods are `RUNNING`, you can stop the watch:
+
+clear{{execute interrupt}}

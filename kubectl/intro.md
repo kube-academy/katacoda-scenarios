@@ -1,1 +1,1 @@
-This scenario will introduce you to the basic kubectl commands. You'll learn how to navigate through your cluster.
+This scenario will introduce you to the basic `kubectl` commands. You'll learn how to use the CLI tool to navigate through your cluster.
