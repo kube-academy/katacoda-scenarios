@@ -9,6 +9,6 @@ Similarly, we can use the YAML format.
 `kubectl get pod -o yaml `{{execute}}
 
 
-Or if you want to get additional information on the pods you can use this command:
+Or if you want to get additional information on the Pods you can use this command:
 
 `kubectl get pod -o wide `{{execute}}

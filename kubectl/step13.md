@@ -1,7 +1,8 @@
 Here are some more quick tips to help you be more efficient using kubectl
-- Get the documentation for Kubernetes resources such as pods or services
+
+- Get the documentation for Kubernetes resources such as Pods or Services
 `kubectl explain deployment`{{execute}}
-This will show you details about a deployment resource type
+This will show you details about a Deployment resource type
 
 - View all the supported resources types
 `kubectl api-resources`{{execute}}
