@@ -1,6 +1,6 @@
 {
-  "title": "Introduction to kubectl",
-  "description": "In this scenario, we will introduce you to the basic kubectl commands. You'll learn how to navigate quickly and efficiently through your cluster.",
+  "title": "Hands on with kubectl - Introduction",
+  "description": "In this scenario, will introduce you to the basic kubectl commands. You'll learn how to navigate through your cluster quickly and efficiently.",
   "difficulty": "Beginner",
   "time": "15 - 20 minutes",
   "details": {
@@ -15,7 +15,7 @@
         "text": "step2.md"
       },
       {
-        "title": "Step 3",
+        "title": "Step 3 ",
         "code": "clear.sh",
         "text": "step3.md"
       },
@@ -76,6 +76,14 @@
     },
     "finish": {
       "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "nginx-deployment.yaml",
+          "target": "~/"
+        }
+      ]
     }
   },
   "environment": {
