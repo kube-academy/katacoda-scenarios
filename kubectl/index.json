@@ -1,6 +1,6 @@
 {
   "title": "Introduction to kubectl",
-  "description": "In this scenario, will introduce you to the basic kubectl commands. You'll learn how to navigate through your quickly and efficiently cluster.",
+  "description": "In this scenario, we will introduce you to the basic kubectl commands. You'll learn how to navigate quickly and efficiently through your cluster.",
   "difficulty": "Beginner",
   "time": "15 - 20 minutes",
   "details": {
