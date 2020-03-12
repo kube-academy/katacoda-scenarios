@@ -16,16 +16,19 @@ Now let's scale the deployment up to 5 replicas by typing the below command:
 
 `kubectl scale deploy nginx-deployment --replicas=5`{{execute}}
 
-Verify whether pods have been scaled:
+Verify whether the pods have been scaled:
 
 `kubectl get pods`{{execute}}
 
 You can pass the `-w` flag to watch  the scaling live.
 
-Let's now scale the deployment down to 1 replica:
+Let's wait until the pods are running, then scale the deployment down to 1 replica. Type the below command to scale it down:
 
 `kubectl scale deploy/nginx-deployment --replicas=1`{{execute}}
 
 Verify whether the pods have been scaled down to a single replica:
 
 `kubectl get pods`{{execute}}
+
+
+**NOTE:** *Scaling a deployment using the imperative `kubectl scale` command is not best practice. The best practice is to manually edit the deployment manifest file, update the spec.replicas field, save it, and run the `kubectl apply -f DEPPLYOMET.YAML` command. This way, the deployment manifest file remains the single source of truth.*

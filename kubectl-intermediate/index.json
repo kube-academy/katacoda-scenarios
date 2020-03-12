@@ -1,8 +1,8 @@
 {
-  "title": "Kubectl Intermediate",
+  "title": "Hands on with kubectl - Intermediate",
   "description": "Learn how to use kubectl as an itermediate user",
   "difficulty": "Intermediate",
-  "time": "45 mimutes",
+  "time": "60 mimutes",
   "details": {
     "steps": [
       {
@@ -82,7 +82,7 @@
         "text": "step15.md"
       },
       {
-        "title": "Patch resources",
+        "title": "Patch and label resources",
         "courseData": "delete-pods.sh",
         "code": "clear.sh",
         "text": "step16.md"
