@@ -88,9 +88,6 @@
       "text": "finish.md"
     }
   },
-  "assets": {
-    "host01": []
-  },
   "environment": {
     "icon": "fa-kubernetes",
     "showdashboard": true,
