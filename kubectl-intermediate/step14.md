@@ -1,4 +1,4 @@
-In this step, we are going to update the `nginx` image from `nginx:1.16` to `nginx:1.17` with no downtime. We created a deployment in the previous step, which provides a mechanism (`rollingUpdate`) by default.
+In this step, we are going to update the `nginx` image from `nginx:1.20` to `nginx:1.21` with no downtime. We created a deployment in the previous step, which provides a mechanism (`rollingUpdate`) by default.
 
 Before we proceed with the update, let's scale the previous deployment five replicas again:
 
