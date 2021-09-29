@@ -47,8 +47,7 @@
       },
       {
         "title": "Find resource with --selector",
-        "courseData": "deploy.sh",
-        "code": "clear.sh",
+        "code": "deploy.sh",
         "text": "step9.md"
       },
       {
