@@ -1,3 +1,6 @@
+Run the following command to ensure that your Kubernetes cluster is running and configured:
+
+`launch.sh`{{execute}}
 
 A context in kubernetes is what ties a user to a particular cluster and namespace. As a kubernetes user or administrator, you may have to access multiple kubernetes cluster environments. Therefore let's review the current `kubectl` configuration. Type the below command:
 
