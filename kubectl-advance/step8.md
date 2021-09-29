@@ -23,7 +23,7 @@ You can also check the taints on all nodes:
 
 Let's now try to deploy a single pod:
 
-`kubectl run my-app --image=nginx --restart=Never`{{execute}}
+`kubectl run my-app --image=quay.io/bitnami/nginx`{{execute}}
 
 The newly deployed pod will be in a pending state, because it will not tolerate the taints applied to both nodes. Therefore, it will not be scheduled.
 
