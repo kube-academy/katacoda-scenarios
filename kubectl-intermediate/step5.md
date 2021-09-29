@@ -12,17 +12,17 @@ The first option is to use your favorite text editor and manually create a yaml 
 
 The second option is to generate the manifest file via the `kubectl` command. Let's create another namespace and call it `backend` with this option. Type the below command and redirect the output to a file:
 
-`kubectl create namespace backend -o yaml --dry-run=client >~/ns-backend.yaml`{{execute}}
+`kubectl create namespace backend -o yaml --dry-run=client > ns-backend.yaml`{{execute}}
 
 *The `--dry-run` flag allows you to preview the object without creating it, and makes no changes to the cluster.  It's a great way to validate without making changes*
 
 Let's verify whether the manifest file has been created:
 
-`cat ~/ns-backend.yaml`{{execute}}
+`cat ns-backend.yaml`{{execute}}
 
 Next, Use the `kubectl apply -f` command with the file we generated in the previous step to create the namespace resource as follows:
 
-`kubectl apply -f ~/ns-backend.yaml`{{execute}}
+`kubectl apply -f ns-backend.yaml`{{execute}}
 
 Let's display all namespaces and validate that the frontend and backend namespaces have been created:
 `kubectl get ns`{{execute}}
