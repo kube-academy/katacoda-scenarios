@@ -8,7 +8,7 @@ Verify whether the `test` container is up and running:
 
 Now let's get the output of the `date` command from the running `test` container without logging into it:
 
-`kubectl exec test date`{{execute}}
+`kubectl exec test -- date`{{execute}}
 
 Using the `iexec` plug-in, let's get the content of the `/etc/resolv.conf/` file from the running `test` container:
 
