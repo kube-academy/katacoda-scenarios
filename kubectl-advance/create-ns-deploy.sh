@@ -13,7 +13,3 @@ for x in developers admins dbadmins; do kubectl create namespace $x; done
 cd ~/deployment
 
 kubectl create -f explore-deploy.yaml
-
-
-
-
