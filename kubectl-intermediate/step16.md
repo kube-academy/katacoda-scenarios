@@ -2,7 +2,7 @@ Patching can be used to partially update any kubernetes resources such as nodes,
 
 Let's create a pod with a label `env=prod` in the default namespace:
 
-`kubectl run nginx  --image=nginx --restart=Never --labels=env=prod`{{execute}}
+`kubectl run nginx --image=quay.io/bitnami/nginx --labels=env=prod`{{execute}}
 
 We can verify whether the application has been deployed with the label:
 
