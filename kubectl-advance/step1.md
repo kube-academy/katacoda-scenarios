@@ -1,3 +1,7 @@
+Run the following command to ensure that your Kubernetes cluster is running and configured:
+
+`launch.sh`{{execute}}
+
 In the [kubectl intermediate](https://katacoda.com/mbah-vmw/scenarios/kubectl-intermediate) scenario lab, we introduced you to a few `kubectl` plugins (NS and CTX). Now, we are going to introduce you to `krew`, which is a plugin manager for `kubectl`. We will use `krew` to install various plugins that we will use throughout the scenario. We will be using the following plugins:
 
 - `access-matrix` - shows an RBAC (role based access control) access matrix for server resources

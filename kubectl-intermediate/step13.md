@@ -1,6 +1,6 @@
 Let's deploy an nginx application in the default namespace using the `kubectl` command line method. Type  the below command:
 
-`kubectl create deployment nginx-deployment --image=nginx:1.16`{{execute}}
+`kubectl create deployment nginx-deployment --image=quay.io/bitnami/nginx:1.20`{{execute}}
 
 We can verify whether the resources have been created:
 

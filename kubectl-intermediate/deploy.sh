@@ -1,11 +1,6 @@
 #!/bin/bash
 
-# Change directory to the home user
-
-cd ~/
-
-kubectl create -f  label-deploy.yaml
-
-
-
-
+set +v # suppress echoing the echo command being invoked
+clear
+echo "Please wait a moment while we apply some deployments to the frontend namespace.."
+kubectl create -f ~/label-deploy.yaml

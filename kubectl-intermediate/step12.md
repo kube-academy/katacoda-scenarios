@@ -21,10 +21,10 @@ The previous command's output should now look similar to the below output:
 ```
 NAME        CPU
 master       2
-node01       4
+node01       2
 ```
 
-In step 9, we deployed multiple pods, so let's find all the pods that were deployed with the label `image:nginx:1.16` and output them in a tabulated format with column headers POD_NAME and IMAGE_VER:
+In step 9, we deployed multiple pods, so let's find all the pods that were deployed and output them in a tabulated format with column headers POD_NAME and IMAGE_VER:
 
 `kubectl get pods -n frontend -o custom-columns=POD_NAME:.metadata.name,IMAGE_VER:.spec.containers[*].image`{{execute}}
 

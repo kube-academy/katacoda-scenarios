@@ -1,4 +1,4 @@
-In this step, we are going to update the `nginx` image from `nginx:1.16` to `nginx:1.17` with no downtime. We created a deployment in the previous step, which provides a mechanism (`rollingUpdate`) by default.
+In this step, we are going to update the `nginx` image from `nginx:1.20` to `nginx:1.21` with no downtime. We created a deployment in the previous step, which provides a mechanism (`rollingUpdate`) by default.
 
 Before we proceed with the update, let's scale the previous deployment five replicas again:
 
@@ -18,9 +18,9 @@ Let's filter all the pod names along with their current `nginx` image version us
 
 Now, let's proceed with the update. We will add the `--record` flag to capture and record the history of the rollout: Type the below command:
 
-`kubectl set image deployment/nginx-deployment nginx=nginx:1.17 --record`{{execute}}
+`kubectl set image deployment/nginx-deployment nginx=quay.io/bitnami/nginx:1.21 --record`{{execute}}
 
-Alternatively, the result above can be  achieved by editing the deployment manifest either manually or using the `kubectl edit deployment DEPLOYMENT NAME`.  The deployment will be opened in the default text editor (typically `vim`). Edit the  .spec.template.spec.containers[].image key's value by changing the image to `nginx:1.17` and saving the changes.  As long as the manifest validates properly, the deployment will be updated in the cluster.
+Alternatively, the result above can be  achieved by editing the deployment manifest either manually or using the `kubectl edit deployment DEPLOYMENT NAME`.  The deployment will be opened in the default text editor (typically `vim`). Edit the  .spec.template.spec.containers[].image key's value by changing the image to `nginx:1.21` and saving the changes.  As long as the manifest validates properly, the deployment will be updated in the cluster.
 
 
-**NOTE:** *Updating the image of a deployment using the imperative `kubectl set image` commands is not best practice. The best practice is to manually edit the deployment manifest file and update the spec.template.spec.containers[].image field, save it, and run the `kubectl apply -f DEPPLYOMET.YAML` command. This way, the deployment manifest file remains the source of truth.*
+**NOTE:** *Updating the image of a deployment using the imperative `kubectl set image` commands is not best practice. The best practice is to manually edit the deployment manifest file and update the spec.template.spec.containers[].image field, save it, and run the `kubectl apply -f DEPLOYMENT.YAML` command. This way, the deployment manifest file remains the source of truth.*

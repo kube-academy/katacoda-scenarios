@@ -1,3 +1,7 @@
+Run the following command to ensure that your Kubernetes cluster is running and configured:
+
+`launch.sh`{{execute}}
+
 We have a two node Kubernetes cluster deployed and ready. So let’s look at the the Kubernetes cluster information.
 
 Let’s examine the Kubernetes version running in the cluster.

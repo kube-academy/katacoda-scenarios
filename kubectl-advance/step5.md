@@ -12,23 +12,16 @@ Use the `pod-logs` plugin to get the weave pods logs:
 
 `kubectl pod-logs`{{execute}}  
 
-Then, select from the list: 
-- The weave-net-xxxx pod  
-- The weave-npc container  
-- Review the logs  
+Select one of the pods from the list and review the logs.
 
-Alternatively, you can use the `kubectl logs POD_NAME -c CONTAINER_NAME` command as shown below: 
+Alternatively, you can use the `kubectl logs` command to view container logs (see `kubectl logs --help` for more information).
 
-`kubectl logs  weave-net-POD_NAME -c weave-npc`
+**Note:**
+*If a pod has more than one container, the `-c CONTAINER_NAME` option can be used to specify which container's logs to output.*
 
+*The `pod-logs` plug-in does not allow output redirection. Therefore, if you want to redirect the output use `kubectl logs` as such:
+`kubectl logs POD  -c CONTAINER > logsfile`.*
 
-Switch back to the default namespace before moving on to the next step: 
+Switch back to the default namespace before moving on to the next step:
 
 `kubectl ns default`{{execute}}
-
-
-**Note:** 
-*If the specific pod only has one container, then there is no need to add the `-c CONTAINER_NAME` option.*
-
-*Please also note that the `pod-logs` plug-in does not allow output redirection. Therefore, if you want to redirect the output use `kubectl logs` as such: 
-`kubectl logs  weave-net-POD  -c weave-npc >~/weave.logs`.*
